@@ -13,12 +13,13 @@ public class Main {
         Student student4 = new Student("Jan",WydzialEnum.Informatyczny);
 
         Osoba osoba = new Osoba("Jan","Kowalski",55345);
+        Student student0 = new Student(new Osoba(Marek,Kowalski,33,WydzialEnum.Historii));
 
 
 
-        List<Student> Studenci = new ArrayList<>();
-        Studenci.add(student);
-        Studenci.add(student1);
+        List<Student> studenci = new ArrayList<>();
+        studenci.add(student0);
+        studenci.add(student1);
 
         for (Student s : Studenci) {
             System.out.println(s);
